@@ -1,5 +1,7 @@
 import React from 'react';
-import { Github, Linkedin, Twitter, Facebook, Instagram, Code, Mail, Download, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Twitter, Instagram, Code, Mail, Download,ExternalLink, Youtube } from 'lucide-react';
+import profilePicture1 from './assets/me1.png';
+import profilePicture2 from './assets/me2.png';
 
 export default function Portfolio() {
   const projects = [
@@ -36,15 +38,15 @@ export default function Portfolio() {
   ];
 
   const highlights = [
-    { icon: "🚀", title: "Product Maker", description: "Built apps with 800+ downloads and 4.6-star ratings" },
-    { icon: "🎓", title: "Masters at IIT Hyderabad", description: "Pursuing MS in Computer Science. BTech with 88.86%" },
-    { icon: "⭐", title: "Competitive Programmer", description: "4 stars on CodeChef, CCDSAP Certified, ranked #138/15000" },
-    { icon: "💻", title: "Problem Solver", description: "700+ problems solved across coding platforms" }
+    { icon: "🚀", title: "Product Maker & Aspiring Indie-hacker", description: "Built apps with 1k+ downloads and 4.7-star ratings" },
+    { icon: "🎓", title: "Masters at IIT Hyderabad", description: "Completed my M.Tech in Computer Science at Indian Institute of Technology, Hyderabad" },
+    { icon: "💻", title: "Passionate about Teaching", description: "I have made several videos related to Computer Science on Youtube. Have also volunteered to teach in NGOs like U&I for close to a year.  " },
+    { icon: "🏃‍♂️", title: "Passionate about Running", description: "While I am not coding, you'll find me running around like Forest Gump! " }
   ];
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      {/* Hero Section */}
+      {/* Hero Section with Circular Thumbnail */}
       <header className="bg-gradient-to-r from-purple-700 to-indigo-800 text-white">
         <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
           <h1 className="text-xl font-bold">PV</h1>
@@ -54,12 +56,22 @@ export default function Portfolio() {
             <a href="#contact" className="hover:text-purple-200">Contact</a>
           </div>
         </nav>
-        <div className="container mx-auto px-6 py-24">
-          <h1 className="text-5xl font-bold mb-4">Prashanth Vaidya R</h1>
-          <p className="text-xl mb-8">Problem solver and maker of products. An ambitious geek. Full-time learner. Occasional writer.</p>
-          <button className="bg-white text-purple-700 px-6 py-3 rounded-lg font-semibold flex items-center hover:bg-purple-100">
-            <Download className="mr-2" /> Download Resume
-          </button>
+        <div className="container mx-auto px-6 py-24 flex items-center">
+          <div className="w-2/3">
+            <h1 className="text-5xl font-bold mb-4">Prashanth Vaidya R</h1>
+            <p className="text-xl mb-8">Highly Driven & Curious Engineer 🚀 | Aspiring Indie-hacker 🤠 | Long-distance runner 🏃‍♂️ </p>
+            <button className="bg-white text-purple-700 px-6 py-3 rounded-lg font-semibold flex items-center hover:bg-purple-100 transition duration-300">
+              <Download className="mr-2" /> Download Resume
+            </button>
+          </div>
+          <div className="md:w-1/2 flex justify-center space-x-4">
+            <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-lg">
+              <img src={profilePicture1} alt="Tech" className="w-full h-full object-cover" />
+            </div>
+            <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-lg">
+              <img src={profilePicture2} alt="Running" className="w-full h-full object-cover" />
+            </div>
+          </div>
         </div>
       </header>
 
@@ -81,7 +93,7 @@ export default function Portfolio() {
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center px-3 py-1 rounded bg-purple-100 text-purple-700 hover:bg-purple-200"
+                      className="inline-flex items-center px-3 py-1 rounded bg-purple-100 text-purple-700 hover:bg-purple-200 transition duration-300"
                     >
                       <ExternalLink className="w-4 h-4 mr-1" /> {link.label}
                     </a>
@@ -100,9 +112,9 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {highlights.map((highlight, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                <div className="text-3xl mb-4">{highlight.icon}</div>
-                <h3 className="text-xl font-semibold mb-2">{highlight.title}</h3>
-                <p className="text-gray-600">{highlight.description}</p>
+                <div className="text-4xl mb-4 text-center">{highlight.icon}</div>
+                <h3 className="text-xl font-semibold mb-2 text-center">{highlight.title}</h3>
+                <p className="text-gray-600 text-center">{highlight.description}</p>
               </div>
             ))}
           </div>
@@ -114,30 +126,35 @@ export default function Portfolio() {
         <h2 className="text-3xl font-bold mb-12 text-center">Get in Touch</h2>
         <div className="max-w-2xl mx-auto text-center">
           <p className="mb-8 text-gray-600">
-            If you'd like to leave any kind of feedback or would like to contact me regarding any work opportunities,
-            please feel free to do so through my email. I'll get back to you at the earliest. 🤠
+            Feel free to contact me for feedback or work opportunities via email. <br/>
+            Also, I’m always up for a chat about anything tech or running! 🤠
           </p>
           <div className="flex justify-center items-center space-x-6 mb-8">
-            <a href="mailto:prashanthvaidya.r@gmail.com" className="text-purple-700 hover:text-purple-900">
-              <Mail className="w-6 h-6" />
+            <a href="mailto:prashanthvaidya.r@gmail.com" className="text-purple-700 hover:text-purple-900 transition duration-300">
+              <Mail className="w-8 h-8" />
             </a>
-            <a href="https://github.com/thecodearrow" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900">
-              <Github className="w-6 h-6" />
+            <a href="https://github.com/thecodearrow" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900 transition duration-300">
+              <Github className="w-8 h-8" />
             </a>
-            <a href="https://www.linkedin.com/in/prashanthvaidyar/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-900">
-              <Linkedin className="w-6 h-6" />
+            <a href="https://www.linkedin.com/in/prashanthvaidyar/" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-900 transition duration-300">
+              <Linkedin className="w-8 h-8" />
             </a>
-            <a href="https://twitter.com/lordvaidya" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600">
-              <Twitter className="w-6 h-6" />
+            <a href="https://twitter.com/thecodemarathon" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600 transition duration-300">
+              <Twitter className="w-8 h-8" />
             </a>
-            <a href="https://www.facebook.com/PrashanthVaidyaR" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
-              <Facebook className="w-6 h-6" />
+            <a href="https://www.strava.com/athletes/112006595" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:text-orange-700 transition duration-300">
+              <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7.008 13.828h4.172" />
+              </svg>
             </a>
-            <a href="https://www.instagram.com/prashanth_vaidya/" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-800">
-              <Instagram className="w-6 h-6" />
+            <a href="https://www.instagram.com/prashanth_vaidya/" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-800 transition duration-300">
+              <Instagram className="w-8 h-8" />
             </a>
-            <a href="https://www.stopstalk.com/user/profile/thecodearrow" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900">
-              <Code className="w-6 h-6" />
+            <a href="https://www.youtube.com/@prashanthvaidya" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-800 transition duration-300">
+              <Youtube className="w-8 h-8" />
+            </a>
+            <a href="https://www.stopstalk.com/user/profile/thecodearrow" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900 transition duration-300">
+              <Code className="w-8 h-8" />
             </a>
           </div>
         </div>
