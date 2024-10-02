@@ -21,7 +21,7 @@ export default function Portfolio() {
     },
     {
       title: "The Running Genie",
-      description: "AI running coach",
+      description: "AI-powered running coach that provides personalized, actionable insights from user activities recorded on platforms like Strava or smartwatches.",
       tech: "ReactNative, Redux Persist, ChatGPT APIs,Strava APIs",
       image: running,
       links: [
