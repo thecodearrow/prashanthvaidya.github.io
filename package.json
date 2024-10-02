@@ -2,9 +2,7 @@
   "name": "portfolio-pv",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://thecodearrow.github.io/prashanthvaidya.github.io/",
   "dependencies": {
-    "@tailwindcss/aspect-ratio": "^0.4.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -19,8 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build && firebase deploy"
   },
   "eslintConfig": {
     "extends": [
@@ -42,7 +39,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
-    "gh-pages": "^5.0.0",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2"
   }

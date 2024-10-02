@@ -86,7 +86,7 @@ export default function Portfolio() {
         </nav>
         <div className="container mx-auto px-6 py-24 flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0 animate-fadeIn">
-            <h1 className="text-5xl font-bold mb-4">Prashanth Vaidya R</h1>
+            <h1 className="text-5xl font-bold mb-4">Prashanth Vaidya</h1>
             <p className="text-xl mb-8">Highly Driven & Curious Engineer 🚀 | Aspiring Indie-hacker 🤠 | Long-distance runner 🏃‍♂️ </p>
             <a 
               href="/resume.pdf" 
