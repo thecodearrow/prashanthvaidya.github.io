@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/prashanthvaidya.github.io/static/css/main.e54cde15.css",
-    "main.js": "/prashanthvaidya.github.io/static/js/main.bf0fe6d7.js",
+    "main.css": "/prashanthvaidya.github.io/static/css/main.6b4f0edd.css",
+    "main.js": "/prashanthvaidya.github.io/static/js/main.d4529696.js",
     "static/js/453.def20978.chunk.js": "/prashanthvaidya.github.io/static/js/453.def20978.chunk.js",
     "static/media/me2.png": "/prashanthvaidya.github.io/static/media/me2.fe4f644bfef184cf6fdd.png",
+    "static/media/quizapp.png": "/prashanthvaidya.github.io/static/media/quizapp.cae0900107684477bac5.png",
+    "static/media/attendance.webp": "/prashanthvaidya.github.io/static/media/attendance.54df9d4912c80086de44.webp",
+    "static/media/running.webp": "/prashanthvaidya.github.io/static/media/running.69823591982cbf87df98.webp",
+    "static/media/gratitude-genie.webp": "/prashanthvaidya.github.io/static/media/gratitude-genie.ceb9405e8646273e2e5d.webp",
     "static/media/me1.png": "/prashanthvaidya.github.io/static/media/me1.cab9ee8b263a18d955a4.png",
     "index.html": "/prashanthvaidya.github.io/index.html",
-    "main.e54cde15.css.map": "/prashanthvaidya.github.io/static/css/main.e54cde15.css.map",
-    "main.bf0fe6d7.js.map": "/prashanthvaidya.github.io/static/js/main.bf0fe6d7.js.map",
+    "main.6b4f0edd.css.map": "/prashanthvaidya.github.io/static/css/main.6b4f0edd.css.map",
+    "main.d4529696.js.map": "/prashanthvaidya.github.io/static/js/main.d4529696.js.map",
     "453.def20978.chunk.js.map": "/prashanthvaidya.github.io/static/js/453.def20978.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e54cde15.css",
-    "static/js/main.bf0fe6d7.js"
+    "static/css/main.6b4f0edd.css",
+    "static/js/main.d4529696.js"
   ]
 }
